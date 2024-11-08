@@ -21,14 +21,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className}  antialiased`}>
-        <SidebarProvider>
-          <AppSidebar />
+      <body className={`${montserrat.className}  antialiased dark`}>
+        {/* <SidebarProvider>
+          <AppSidebar /> */}
           <main className="space-y-4 w-full">
-            <SidebarTrigger />
+            {/* <SidebarTrigger /> */}
             {children}
           </main>
-        </SidebarProvider>
+        {/* </SidebarProvider> */}
       </body>
     </html>
   );
