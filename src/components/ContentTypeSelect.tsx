@@ -114,13 +114,13 @@ export function ContentTypeSelect() {
             aria-expanded={open}
             className="w-full justify-between"
           >
-            {kinds.length > 0 ? "Add more..." : "Select kind..."}
+            {kinds.length > 0 ? "Add more..." : "Select Genre..."}
             <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
           </Button>
         </PopoverTrigger>
         <PopoverContent className="w-full p-0">
           <Command>
-            <CommandInput placeholder="Search framework..." />
+            <CommandInput placeholder="Search Genre..." />
             <CommandList>
               <CommandEmpty>No results.</CommandEmpty>
               <CommandGroup>
