@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import {Montserrat} from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
-
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
-import { AppSidebar } from "@/components/app-sidebar"
+import { ThemeProvider } from "@/components/theme-provider";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/app-sidebar";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -21,9 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${montserrat.className}  antialiased`}
-      >
+      <body className={`${montserrat.className}  antialiased`}>
         <SidebarProvider>
           <AppSidebar />
           <main>
