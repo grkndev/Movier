@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={`${montserrat.className}  antialiased`}>
         <SidebarProvider>
           <AppSidebar />
-          <main>
+          <main className="space-y-4 w-full">
             <SidebarTrigger />
             {children}
           </main>
