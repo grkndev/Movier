@@ -35,6 +35,7 @@ export default function MovieCard({
               alt="mo"
               width={2000}
               height={3000}
+              className="w-48 aspect-[1/1.5]"
               src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
             />
           </Card>
